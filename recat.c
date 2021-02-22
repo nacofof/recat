@@ -27,9 +27,10 @@ int main(int argc, char* argv[]){
 
         reverse(buffer, fileLen);
 
-        printf("%.*s",fileLen,buffer);
+        printf("%.*s",(int)fileLen,buffer);
+        printf("\n");
     } else {
-        printf("You need to supply a filename");
+        printf("You need to supply a filename\n");
     }
     exit(0);
 } 
